@@ -294,6 +294,24 @@ main .banner-index .fila-banner .subtitle-banner{
     color: white;
     transition: .3s ease all;
 }
+.content-suscribe input::placeholder{
+    transition: .3s ease all;
+}
+.content-suscribe input:focus::placeholder{
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: white;
+    transition: .3s ease all;
+}
+.content-login input::placeholder{
+    transition: .3s ease all;
+}
+.content-login input:focus::placeholder{
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: white;
+    transition: .3s ease all;
+}
 .bg-loginSuscribe{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.500), rgba(0,0,0,0.100)), url(../img/IMG-loginSuscribe.jpg);
     width: 100%; 
