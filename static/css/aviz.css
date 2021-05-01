@@ -159,15 +159,6 @@ main .banner-index .fila-banner .subtitle-banner{
     background-attachment: fixed; 
     background-position: center top;
 }
-.contenedor-bak4nime{
-    width: 100%; 
-    padding: 30px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.900), rgba(0,0,0,0.500)), url(../img/IMG-bak4nime-index.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-position: center top;
-}
 .btn-info-index{
     border: none; 
     border-radius: 3px; 
@@ -194,6 +185,119 @@ main .banner-index .fila-banner .subtitle-banner{
     background-color: black; 
     border: 2px solid black; 
     padding: 40px 50px 60px 50px;
+}
+.content-suscribe{
+    background-color: rgba(0, 0, 0, 0.730); 
+    height: 770px; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 80px; 
+    margin: 6% 600px 50px 600px; 
+    position: absolute;
+}
+.content-suscribe .title-suscribe{
+    color: white; 
+    text-transform: uppercase; 
+    font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+    font-weight: bolder;
+}
+.content-suscribe input{
+    border: none; 
+    border-radius: 5px; 
+    padding: 20px; 
+    width: 100%;
+    background-color: rgb(53, 53, 53); 
+    color: white; 
+    margin-top: 25px;
+    transition: .3s ease all;
+}
+.content-suscribe input:hover{
+    background-color: rgba(255, 0, 0, 0.850);
+    color: white;
+    transition: .3s ease all;
+}
+.content-suscribe .btn-suscribirse{
+    width: 100%; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.500); 
+    color: black; 
+    padding: 20px; 
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;  
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: .3s ease all;
+}
+.content-suscribe .btn-suscribirse:hover{
+    background-color: rgba(255, 0, 0, 0.850);
+    color: white;
+    transition: .3s ease all;
+}
+.content-login{
+    background-color: rgba(0, 0, 0, 0.730); 
+    height: 700px; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 100px;
+    margin: -100% 600px 50px 600px;
+    position: absolute;
+}
+.content-login .title-login{
+    color: white; 
+    text-transform: uppercase; 
+    font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+    font-weight: bolder;
+}
+.content-login input{
+    border: none; 
+    border-radius: 5px; 
+    padding: 20px; 
+    width: 100%;
+    background-color: rgb(53, 53, 53); 
+    color: white; 
+    margin-top: 25px;
+    transition: .3s ease all;
+}
+.content-login input:hover{
+    background-color: rgba(255, 0, 0, 0.850);
+    color: white;
+    transition: .3s ease all;
+}
+.content-login .btn-login{
+    width: 100%; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.750); 
+    color: black; 
+    padding: 20px; 
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;  
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: .3s ease all;
+}
+.content-login .btn-login:hover{
+    background-color: rgba(255, 0, 0, 0.850);
+    color: white;
+    transition: .3s ease all;
+}
+.contenedor-estrenos-index input{
+    float: right; 
+    border: none; 
+    background-color: rgb(196, 196, 196); 
+    color: black; 
+    padding: 5px; 
+    width: 300px; 
+    transition: .3s ease all;
+}
+.contenedor-estrenos-index input:hover{
+    background-color: rgba(255, 0, 0, 0.850);
+    color: white;
+    transition: .3s ease all;
+}
+.bg-loginSuscribe{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.500), rgba(0,0,0,0.100)), url(../img/IMG-loginSuscribe.jpg);
+    width: 100%; 
+    height: 100vh;
 }
 /* @MEDIAS */
 @media (max-width: 991px){
@@ -284,5 +388,25 @@ main .banner-index .fila-banner .subtitle-banner{
     }
     .br1, .br2, .br3{
         display: none;
+    }
+    .content-login,
+    .content-suscribe{
+        margin-left: 60px;
+        margin-right: 40px;
+        padding: 20px;
+    }
+    .content-suscribe{
+        height: auto;
+        margin-top: 22.5%;
+    }
+    .content-login{
+        height: auto;
+        margin-top: -1000px;
+    }
+    .content-suscribe .title-suscribe{
+        font-size: 20px;
+    }
+    .content-login .title-login{
+        font-size: 20px;
     }
 }
