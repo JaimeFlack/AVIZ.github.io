@@ -44,7 +44,7 @@ function valdiarCorreoSuscribe() {
             icon_ReConf.innerHTML = '<i class="fas fa-sad-tear">';
             texto_ReConf.innerHTML = "Dirección de correo electrónico inválida";
             subtexto_ReConf.innerHTML = "Por favor, ingrese un correcto válido";
-            ventana_reintentar.style.marginTop = "7%";
+            ventana_reintentar.style.marginTop = "9%";
             ventana_reintentar.style.transition = ".3s ease all";
             btn_reintentar.addEventListener("click", function (e) {
                 ventana_reintentar.style.marginTop = "-1000px";
@@ -56,7 +56,7 @@ function valdiarCorreoSuscribe() {
             icon_ReConf.innerHTML = '<i class="fas fa-sad-tear">';
             texto_ReConf.innerHTML = "Contraseña sin datos";
             subtexto_ReConf.innerHTML = "Por favor, ingrese una contraseña, este apartado es obligatorio.";
-            ventana_reintentar.style.marginTop = "7%";
+            ventana_reintentar.style.marginTop = "9%";
             ventana_reintentar.style.transition = ".3s ease all";
             btn_reintentar.addEventListener("click", function (e) {
                 ventana_reintentar.style.marginTop = "-1000px";
@@ -68,7 +68,7 @@ function valdiarCorreoSuscribe() {
             icon_ReConf.innerHTML = '<i class="fas fa-sad-tear">';
             texto_ReConf.innerHTML = "Contraseña sin datos";
             subtexto_ReConf.innerHTML = "Por favor, ingrese una contraseña, este apartado es obligatorio.";
-            ventana_reintentar.style.marginTop = "7%";
+            ventana_reintentar.style.marginTop = "9%";
             ventana_reintentar.style.transition = ".3s ease all";
             btn_reintentar.addEventListener("click", function (e) {
                 ventana_reintentar.style.marginTop = "-1000px";
@@ -81,7 +81,7 @@ function valdiarCorreoSuscribe() {
             texto_ReConf.innerHTML = "Vaya, al parecer las contraseñas no concuerdan entre si.";
             subtexto_ReConf.innerHTML = "Por favor, vuelve a ingresar la contraseña y vuelve a intentarlo.";
             btn_reintentar.innerHTML = "Reintentar";
-            ventana_reintentar.style.marginTop = "7%";
+            ventana_reintentar.style.marginTop = "9%";
             ventana_reintentar.style.transition = ".3s ease all";
             btn_reintentar.addEventListener("click", function (e) {
                 ventana_reintentar.style.marginTop = "-1000px";
@@ -94,7 +94,7 @@ function valdiarCorreoSuscribe() {
             icon_ReConf.innerHTML = '<i class="fas fa-sad-tear">';
             texto_ReConf.innerHTML = "Nombre de usuario sin datos";
             subtexto_ReConf.innerHTML = "Por favor, ingrese un nombre de usuario, este apartado es obligatorio.";
-            ventana_reintentar.style.marginTop = "7%";
+            ventana_reintentar.style.marginTop = "9%";
             ventana_reintentar.style.transition = ".3s ease all";
             btn_reintentar.addEventListener("click", function (e) {
                 ventana_reintentar.style.marginTop = "-1000px";
@@ -108,7 +108,7 @@ function valdiarCorreoSuscribe() {
             texto_ReConf.innerHTML = "Todo OK! Bienvenido(a) a AVIZ! " + input_userName.value + "";
             subtexto_ReConf.innerHTML = "Por ser cliente nuevo te regalamos tu primer mes GRATIS! Disfruta de la experiencia AVIZ.";
             btn_reintentar.innerHTML = "Aceptar";
-            ventana_reintentar.style.marginTop = "7%";
+            ventana_reintentar.style.marginTop = "9%";
             ventana_reintentar.style.transition = ".3s ease all";
             btn_reintentar.addEventListener("click", function (e) {
                 e.preventDefault();
