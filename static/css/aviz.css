@@ -440,11 +440,16 @@ main .banner-index .fila-banner .subtitle-banner{
     .content-suscribe{
         margin-left: 40px;
         margin-right: 15px;
-        padding: 20px;
+        padding: 18px;
     }
-    .content-suscribe{
+    .content-suscribe,
+    .content-login{
         height: auto;
-        margin-top: 24.5%;
+        margin: 24.5% 0px 50px 15px; 
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, 0.950);
     }
     .content-login{
         height: auto;
