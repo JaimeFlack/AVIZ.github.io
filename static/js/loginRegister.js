@@ -28,6 +28,7 @@ function valdiarCorreoSuscribe() {
     var btn_suscribe = document.getElementById("btn-suscribirse");
     var btn_reintentar = document.getElementById("btn-reintentar");
     var btn_suscribe_pc = document.getElementById("suscribirse-pcMode");
+    var btn_suscribe_mobile = document.getElementById("suscribirse-mbMode");
     var ventana_reintentar = document.getElementById("window-reintentar");
     var input_email = document.getElementById("input-email");
     var input_contraseña = document.getElementById("contraseña-input");
@@ -106,6 +107,10 @@ function valdiarCorreoSuscribe() {
             icon_ReConf.innerHTML = '<i class="fas fa-thumbs-up">';
             btn_suscribe_pc.innerHTML = input_userName.value;
             texto_ReConf.innerHTML = "Todo OK! Bienvenido(a) a AVIZ! " + input_userName.value + "";
+            btn_suscribe_mobile.innerHTML = input_userName.value;
+            btn_suscribe_mobile.style.backgroundColor = "white";
+            btn_suscribe_mobile.style.color = "black";
+            btn_suscribe_mobile.style.fontFamily = "Copperplate, Copperplate Gothic Light, fantasy";
             subtexto_ReConf.innerHTML = "Por ser cliente nuevo te regalamos tu primer mes GRATIS! Disfruta de la experiencia AVIZ.";
             btn_reintentar.innerHTML = "Aceptar";
             ventana_reintentar.style.marginTop = "9%";
@@ -117,16 +122,15 @@ function valdiarCorreoSuscribe() {
                 input_email.value = "";
                 input_contraseña.value = "";
                 input_reContraseña.value = "";
-                localStorage.setItem("user", input_userName.value);
-                window.open("../index.html", "_self");
+                localStorage.setItem("suscribeLoginMobile", input_userName.value);
+             /*    window.open("../index.html", "_self"); */
             });
         }
     });
 }
 valdiarCorreoSuscribe();
-
+/* 
 function enviarEmailWelcome(){
     var input_email = document.getElementById("input-email");
 
-
-}
+} */
