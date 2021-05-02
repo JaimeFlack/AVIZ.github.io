@@ -21,8 +21,8 @@
                 <a href="../index.html" style="text-decoration: none;"><h1 class="logo" style="color: white; 
                 font-family: Copperplate, Copperplate Gothic Light, fantasy; letter-spacing: 8px; font-size: 25px; display: inline-flex; 
                 margin-left: 10px; align-items: center;"> AVIZ</h1></a>
-                <a class="suscribe" href="#" style="float: right; color: white; text-decoration: overline;
-                    font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 15px;">SUSCRIBIRSE</a>
+                <a class="suscribe" id="suscribirse-pcMode" href="templates/loginSuscribe.html" style="float: right; color: white; text-decoration: overline;
+                font-family: Copperplate, Copperplate Gothic Light, fantasy; font-size: 15px;">SUSCRIBIRSE</a>
             </div>
         </nav>
     </header>
@@ -54,21 +54,30 @@
             <div class="bg-loginSuscribe">
                 <div class="row" style="width: 100%;">
                     <div class="col-12">
-                        <div>
+                        <div class="window-reintentar text-center" id="window-reintentar">
+                            <i id="icon-ReConf" style="font-size: 50px; color: white;"><p id="p-icon-ReConf" style="color: white; font-size: 20px;"> UPS!</p></i>
+                            <br>
+                            <h4 id="texto-ReConf" style="color: red;">Algo salió mal, por favor vuelve a intentarlo.</h4>
+                            <p id="subtexto-ReConf" style="color: white;">La información ingresada no es válida, por favor vuelve a intentarlo.</p>
+                            <br>
+                            <button class="btn-reintentar" id="btn-reintentar" type="submit">Reintentar</button>
+                        </div>
+                        <form action="mailto">
                             <div class="content-suscribe"  id="suscribe-window">
                                 <h2 class="title-suscribe">SUSCRIBETE A UN PLAN</h2>
                                 <br>
                                 <p style="color: white;">Suscribete hoy en <span style="font-weight: bold;">AVIZ</span> y te regalamos <span style="font-weight: bold;">30 días GRATIS</span>, luego solo paga 
-                                    <span style="font-weight: bold; color: red; font-size: 20px;">$5.500</span>. Cancela cuando quieras.</p>
-                                <input class="email-input" title="Ingresa tu correo electrónico" id="input-email" type="text" placeholder="Correo electrónico">
-                                <input title="Crea tu contraseña"  type="text" placeholder="Contraseña" required>
-                                <input title="Reingresa tu contraseña" type="text" placeholder="Repetir contraseña" required>
+                                    <span style="font-weight: bold; color: red; font-size: 20px;">$5.500 al mes</span>. Puedes cancelar cuando quieras.</p>
+                                <input id="input-email" title="Ingresa tu correo electrónico" type="text" placeholder="Correo electrónico" class="email-input">
+                                <input id="contraseña-input" title="Crea tu contraseña"  type="password" placeholder="Contraseña">
+                                <input id="reContraseña-input" title="Reingresa tu contraseña" type="password" placeholder="Repetir contraseña">
+                                <input id="user-input" title="Crea tu nombre de usuario" type="text" placeholder="Nombre de usuario">
                                 <br><br><br>
                                 <button class="btn-suscribirse" id="btn-suscribirse" type="submit">Suscribirse</button>
                                 <br><br>
                                 <p style="color: white;">¿Ya tienes una cuenta con nosotros? <a href="#" id="btn-login">Inicia Sesión</a></p>
                             </div>
-                        </div>
+                        </form>
                         <div>
                             <div class="content-login" id="login-window">
                                 <h2 class="title-login">INICIA SESIÓN</h2>
@@ -78,7 +87,7 @@
                                 <br><br><br>
                                 <button class="btn-login" type="submit">Acceder</button>
                                 <br><br>
-                                <p style="color: white;">¿Aún no tienes una cuenta con nosotros? <a href="#" id="btn-suscribe">Suscribirse</a></p>
+                                <p style="color: white;">¿Aún no tienes una cuenta con nosotros? <a href="#" id="btn-suscribe">Suscribirme</a></p>
                             </div>
                         </div>
                     </div>
