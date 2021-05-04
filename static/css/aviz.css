@@ -175,9 +175,10 @@ main .banner-index .fila-banner .subtitle-banner{
 }
 .contenedor-estrenos-index .card img{
     transition: .3s ease all;
+    width: 100% !important;
 }
 .contenedor-estrenos-index .card img:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
     transition: .3s ease all;
 }
 .info-populares{
